@@ -1,0 +1,18 @@
+<div id="test">
+  <div class="k-content">
+    <h4>Taters, Precious?</h4>
+    <!--<input id="dish" value="1" style="width=auto%;" />-->
+    <input data-role="dropdownlist"
+           data-auto-bind="false"
+           data-text-field="DishName"
+           data-value-field="DishID"
+           data-bind="value: selectedDish,
+                      source: dishes,
+                      events: {
+                        change: onChange
+                      }"
+           style="width: 100%;"
+    />
+  </div>
+</div>
+<%= javascript_include_tag 'taters.js' %>
